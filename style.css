@@ -1,0 +1,14 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#bfdfae;font-family:Inter,system-ui,Arial}
+#container{height:100%;display:flex;align-items:center;justify-content:center;position:relative;padding:12px}
+canvas{background:linear-gradient(#bdebb0,#9fdc9a);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.25)}
+#hud{position:absolute;top:18px;left:50%;transform:translateX(-50%);text-align:center;color:#063; width:92%}
+#score{background:rgba(255,255,255,0.85);padding:8px 12px;border-radius:8px;margin-bottom:8px;font-weight:700}
+#instructions{background:rgba(255,255,255,0.6);padding:6px 10px;border-radius:6px;font-size:13px}
+#overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);flex-direction:column}
+#overlay.hidden{display:none}
+#msg{background:#fff;padding:20px 28px;border-radius:10px;font-weight:700;margin-bottom:12px}
+#restart{padding:8px 14px;border-radius:8px;border:none;background:#2d9cdb;color:white;font-weight:700;cursor:pointer}
+@media (max-width:600px){
+  canvas{width:360px;height:700px}
+}
